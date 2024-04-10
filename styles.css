@@ -1,0 +1,44 @@
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.classroom-cards {
+    display: grid;
+    height: 85vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+}
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 200px;
+    background: #63C169;
+    border-radius: 6px;
+}
+.class {
+    background: #57AD5C;
+    width: 200px;
+    text-align: center;
+    margin-bottom: 5px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+button {
+    background: none;
+    width: 200px;
+    border: none;
+}
+@media screen and (min-width: 768px) {
+    .classroom-cards {
+        height: 40vh;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+    }
+}
